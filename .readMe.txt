@@ -1,0 +1,3 @@
+auteur:Line
+version: 0.0.0
+nom projet:stockManager
