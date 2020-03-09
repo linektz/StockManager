@@ -28,57 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonGestCategories = new System.Windows.Forms.Button();
+            this.buttonGestSortiesStocks = new System.Windows.Forms.Button();
+            this.buttonGestEntreesStocks = new System.Windows.Forms.Button();
+            this.buttonGestProduits = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonGestCategories
             // 
-            this.button1.Location = new System.Drawing.Point(42, 61);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Gestion Catégories";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonGestCategories.BackColor = System.Drawing.Color.Black;
+            this.buttonGestCategories.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonGestCategories.Location = new System.Drawing.Point(579, 134);
+            this.buttonGestCategories.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonGestCategories.Name = "buttonGestCategories";
+            this.buttonGestCategories.Size = new System.Drawing.Size(200, 65);
+            this.buttonGestCategories.TabIndex = 0;
+            this.buttonGestCategories.Text = "Gestion Catégories";
+            this.buttonGestCategories.UseVisualStyleBackColor = false;
+            
             // 
-            // button2
+            // buttonGestSortiesStocks
             // 
-            this.button2.Location = new System.Drawing.Point(42, 184);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(203, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Gestion sorties stock";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonGestSortiesStocks.BackColor = System.Drawing.Color.Black;
+            this.buttonGestSortiesStocks.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonGestSortiesStocks.Location = new System.Drawing.Point(579, 300);
+            this.buttonGestSortiesStocks.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonGestSortiesStocks.Name = "buttonGestSortiesStocks";
+            this.buttonGestSortiesStocks.Size = new System.Drawing.Size(200, 65);
+            this.buttonGestSortiesStocks.TabIndex = 1;
+            this.buttonGestSortiesStocks.Text = "Gestion sorties stock";
+            this.buttonGestSortiesStocks.UseVisualStyleBackColor = false;
+            this.buttonGestSortiesStocks.Click += new System.EventHandler(this.buttonGestSortiesStocks_Click);
             // 
-            // button3
+            // buttonGestEntreesStocks
             // 
-            this.button3.Location = new System.Drawing.Point(42, 144);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(203, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Gestion entrées stocks";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonGestEntreesStocks.BackColor = System.Drawing.Color.Black;
+            this.buttonGestEntreesStocks.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonGestEntreesStocks.Location = new System.Drawing.Point(219, 300);
+            this.buttonGestEntreesStocks.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonGestEntreesStocks.Name = "buttonGestEntreesStocks";
+            this.buttonGestEntreesStocks.Size = new System.Drawing.Size(200, 65);
+            this.buttonGestEntreesStocks.TabIndex = 2;
+            this.buttonGestEntreesStocks.Text = "Gestion entrées stocks";
+            this.buttonGestEntreesStocks.UseVisualStyleBackColor = false;
+            this.buttonGestEntreesStocks.Click += new System.EventHandler(this.buttonGestEntreesStocks_Click);
             // 
-            // button4
+            // buttonGestProduits
             // 
-            this.button4.Location = new System.Drawing.Point(42, 105);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(203, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Gestion Produits";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonGestProduits.BackColor = System.Drawing.Color.Black;
+            this.buttonGestProduits.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonGestProduits.Location = new System.Drawing.Point(219, 134);
+            this.buttonGestProduits.Margin = new System.Windows.Forms.Padding(0);
+            this.buttonGestProduits.Name = "buttonGestProduits";
+            this.buttonGestProduits.Size = new System.Drawing.Size(200, 65);
+            this.buttonGestProduits.TabIndex = 3;
+            this.buttonGestProduits.Text = "Gestion Produits";
+            this.buttonGestProduits.UseVisualStyleBackColor = false;
+            
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label1.Location = new System.Drawing.Point(444, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 60);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Stock ";
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.buttonGestProduits);
+            this.Controls.Add(this.buttonGestEntreesStocks);
+            this.Controls.Add(this.buttonGestSortiesStocks);
+            this.Controls.Add(this.buttonGestCategories);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainWindow";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -87,10 +117,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonGestCategories;
+        private System.Windows.Forms.Button buttonGestSortiesStocks;
+        private System.Windows.Forms.Button buttonGestEntreesStocks;
+        private System.Windows.Forms.Button buttonGestProduits;
+        private System.Windows.Forms.Label label1;
     }
 }
 
